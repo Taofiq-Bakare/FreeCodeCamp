@@ -24,8 +24,8 @@ def calc_mean(matrix):
     """
     A function to calculate the mean for the axis
     """
-    all_mean = [np.mean(matrix, axis=0),
-                np.mean(matrix, axis=1),
+    all_mean = [str(np.mean(matrix, axis=0)),
+                str(np.mean(matrix, axis=1)),
                 np.mean(matrix)
                 ]
     return all_mean
@@ -35,8 +35,8 @@ def calc_var(matrix):
     """
     A function to calculate the variance for the axis
     """
-    all_var = [np.var(matrix, axis=0),
-               np.var(matrix, axis=1),
+    all_var = [str(np.var(matrix, axis=0)),
+               str(np.var(matrix, axis=1)),
                np.var(matrix)
                ]
     return all_var
@@ -46,8 +46,8 @@ def calc_std(matrix):
     """
     A function to calculate the std for the axis
     """
-    all_std = [np.std(matrix, axis=0),
-               np.std(matrix, axis=1),
+    all_std = [str(np.std(matrix, axis=0)),
+               str(np.std(matrix, axis=1)),
                np.std(matrix)
                ]
     return all_std
@@ -57,8 +57,8 @@ def calc_max(matrix):
     """
     A function to calculate the max for the axis
     """
-    all_max = [np.max(matrix, axis=0),
-               np.max(matrix, axis=1),
+    all_max = [str(np.max(matrix, axis=0)),
+               str(np.max(matrix, axis=1)),
                np.max(matrix)
                ]
     return all_max
@@ -68,8 +68,8 @@ def calc_min(matrix):
     """
     A function to calculate the min for the axis
     """
-    all_min = [np.min(matrix, axis=0),
-               np.min(matrix, axis=1),
+    all_min = [str(np.min(matrix, axis=0)),
+               str(np.min(matrix, axis=1)),
                np.min(matrix)
                ]
     return all_min
@@ -79,8 +79,8 @@ def calc_sum(matrix):
     """
     A function to calculate the sum for the axis
     """
-    all_sum = [np.sum(matrix, axis=0),
-               np.sum(matrix, axis=1),
+    all_sum = [str(np.sum(matrix, axis=0)),
+               str(np.sum(matrix, axis=1)),
                np.sum(matrix)
                ]
     return all_sum
@@ -105,7 +105,7 @@ def calculate(list):
         print("The list is less 9")
 
 
-number = [0, 1, 2, 3, 4, 5, 6, 7, 8]
+number = [9, 1, 5, 3, 3, 3, 2, 9, 0]
 
 solution_1 = calculate(number)
 
