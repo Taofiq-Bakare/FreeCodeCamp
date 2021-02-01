@@ -90,33 +90,25 @@ def calc_sum(matrix):
 def calculate(list):
     """
       A function to collate the results into a dictionary
+      And raise an erro if the list contains less than
+      nine elements
     """
-    # if len(list) != 9:
-    #   return "List must contain nine numbers."
-    try:
-        matrcs = to_mat(list)
-        calculations = {'mean': calc_mean(matrcs),
-                        'variance': calc_var(matrcs),
-                        'standard deviation': calc_std(matrcs),
-                        'max': calc_max(matrcs),
-                        'min': calc_min(matrcs),
-                        'sum': calc_sum(matrcs),
-                        }
-        return calculations
-    except ValueError:
-        return "List must contain nine numbers."
+    if len(list) != 9:
+        raise ValueError("List must contain nine numbers.")
+    matrcs = to_mat(list)
+    calculations = {'mean': calc_mean(matrcs),
+                    'variance': calc_var(matrcs),
+                    'standard deviation': calc_std(matrcs),
+                    'max': calc_max(matrcs),
+                    'min': calc_min(matrcs),
+                    'sum': calc_sum(matrcs),
+                    }
+    return calculations
 
 
-# number = [0, 1, 2, 3, 4, 5, 6, 7, 8]
-
-# solution_1 = calculate(number)
 number = [2, 6, 2, 8, 4, 0, 1, 9]
 
 solution_1 = calculate(number)
 
-# for key, value in solution_1.items():
-#     print(f"{key}, {value}")
 
-# for key in solution_1:
-#     print(f"{key};{solution_1[key]}")
 print(solution_1)
