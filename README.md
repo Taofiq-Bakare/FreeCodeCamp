@@ -40,5 +40,5 @@ This project laid emphasis on of Pandas for data analysis and manipulation such 
 
 * Loading data using Pandas
 * Calculating percentages of different feature
-* Identifying Maximum and Minimum 
+* Identifying Maximum and Minimum
 * Analyzing relationship between similar and dissimilar feature

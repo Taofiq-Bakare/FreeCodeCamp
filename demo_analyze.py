@@ -1,7 +1,0 @@
-# Import libraries
-import pandas as pd
-
-
-df = pd.read_csv("adult.data.csv")
-
-df.head()
