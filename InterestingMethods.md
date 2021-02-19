@@ -32,3 +32,7 @@ and another with the corresponding values.
 
 Seaborn's catplot() method accepts a long format and has different types of plots, check [here](https://seaborn.pydata.org/generated/seaborn.catplot.html) for the documentation.
 Remember to use hue if you'd like to plot variables with multiple values.
+
+## Heatmap with Seaborn
+
+[Here](https://indianaiproduction.com/seaborn-heatmap/)
